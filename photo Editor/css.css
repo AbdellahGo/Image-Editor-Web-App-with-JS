@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    padding: 15px 50px;
+    background-color: #737576;
+    min-height: 100vh;
+}
+.container .editor {
+    margin: auto;
+    max-width: 1100px;
+    display: flex;
+    background-color: #282828;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media (max-width: 767.98px) {
+    .container .editor {
+        flex-direction: column;
+    }
+}
+.editor .upImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-width: 60%;
+}
+.editor .upImg .image {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.editor .upImg .image img, 
+canvas {
+    width: 80%;
+    height: 80%;
+}
+.editor .upImg input {
+    display: none;
+}
+.editor .upImg label {
+    max-height: 40px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ///////// */
+.editor .editImg {
+    text-align: right;
+    min-width: 40%;
+    padding: 20px;
+}
+
+.editor .editImg .filter {
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.editor .editImg .filter h4 {
+    margin-bottom: 10px;
+    color: white;
+}
+.editor .editImg .filter input {
+    width: 100%;
+}
+input {
+    direction: rtl;
+}
+.editor .editImg .btn-edit {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.editor .editImg .btn-edit a {
+    text-decoration: none;
+    background-color: #0A4602;
+    border: none;
+    color:  white;
+    padding: 10px 15px;
+    cursor: pointer;
+}

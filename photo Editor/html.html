@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo editor</title>
+    <link rel="stylesheet" href="/photo Editor/css.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="editor">
+            <div class="upImg">
+                <div class="image">
+                    <img class="img" alt="">
+                    <canvas id="cpeiImag"></canvas>
+                </div>
+                <input type="file" name="image" accept="image/*" id="image">
+                <label class="labelFile" for="image">Upload</label>
+            </div>
+            <div class="editImg">
+                <div class="filter">
+                    <h4>Saturate</h4>
+                    <input type="range" name="saturate" id="saturate" min="0" value="100" max="300" step="1">
+                </div>
+                <!-- :::: -->
+                <div class="filter">
+                    <h4>Contrast</h4>
+                    <input type="range" name="contrast" id="contrast" min="0" value="100" max="200">
+                </div>
+                <!-- :::: -->
+                <div class="filter">
+                    <h4>Brightness</h4>
+                    <input type="range" name="brightness" id="brightness" min="0" value="1" max="5" step="0.1">
+                </div>
+                <!-- :::: -->
+                <div class="filter">
+                    <h4>Sepia</h4>
+                    <input type="range" name="sepia" id="sepia" min="0" value="0" max="100">
+                </div>
+                <!-- :::: -->
+                <div class="filter">
+                    <h4>Grayscale</h4>
+                    <input type="range" name="grayscale" id="grayscale" min="0" value="0" max="100">
+                </div>
+                <!-- :::: -->
+                <div class="filter">
+                    <h4>Blur</h4>
+                    <input type="range" name="blur" id="blur" min="0" value="0" max="10">
+                </div>
+                <!-- :::: -->
+                <div class="filter">
+                    <h4>Hue Rotate</h4>
+                    <input type="range" name="hue rotate" id="hueRotate" min="0" value="0" max="350">
+                </div>
+                <div class="btn-edit">
+                    <a class="reset">Reset</a>
+                    <a download="image" href="" class="dowload">Dowload</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/photo Editor/js.js"></script>
+</body>
+
+</html>
